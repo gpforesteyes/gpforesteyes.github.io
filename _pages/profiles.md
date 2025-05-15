@@ -1,28 +1,75 @@
 ---
 layout: profiles
 permalink: /people/
-title: people
-description: members of the lab or group
+title: Equipe
+description: Membros do grupo de pesquisa
 nav: true
-nav_order: 7
+nav_order: 5
 
 profiles:
   # if you want to include more than one profile, just replicate the following block
   # and create one content file for each profile inside _pages/
-  - align: right
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
+
+  - image: people/ana.jpg
+    image_circular: false
     more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
-  - align: left
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
+      <p><strong>Ana Paula Dalla Corte</strong></p>
+      <p>Professora</p>
+      <p>UFPR - Curitiba</p>
+    linkedin: https://www.linkedin.com/in/anapauladallacorte/
+    orcid: 0000-0001-8529-5554
+    googlescholar: https://scholar.google.com.br/citations?user=XXXXXXXXXXXX
+  - image: people/adri.jpg
+    image_circular: false
     more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+      <p><strong>Adriane Mallmann</strong></p>
+      <p>Pesquisadora</p>
+      <p>BIOFIX - Curitiba</p>
+    linkedin: https://www.linkedin.com/in/adriane-mallmann/
+    orcid: 0000-0002-5592-7132
+  - image: people/fabiano.jpg
+    image_circular: false
+    more_info: >
+      <p><strong>Fabiano</strong></p>
+      <p>Doutorado</p>
+      <p>UFPR - Curitiba</p>
+    linkedin: https://www.linkedin.com/in/fabiano/
+    researchgate: https://www.researchgate.net/profile/Fabiano
+  - image: people/leticia.jpg
+    image_circular: false
+    more_info: >
+      <p><strong>Leticia</strong></p>
+      <p>Mestrado</p>
+      <p>UFPR - Curitiba</p>
+    orcid: 0000-0000-0000-0000
+  - image: people/lucas.jpg
+    image_circular: false
+    more_info: >
+      <p><strong>Lucas</strong></p>
+      <p>Graduação</p>
+      <p>UFPR - Curitiba</p>
+  - image: people/lina.jpg
+    image_circular: false
+    more_info: >
+      <p><strong>Lina</strong></p>
+      <p>Mestradp</p>
+      <p>UFPR - Curitiba</p>
+  - image: people/carla.jpg
+    image_circular: false
+    more_info: >
+      <p><strong>Carla</strong></p>
+      <p>Doutorado</p>
+      <p>UFPR - Curitiba</p>
+  - image: people/mauro.jpg
+    image_circular: false
+    more_info: >
+      <p><strong>Mauro</strong></p>
+      <p>Doutorado</p>
+      <p>UFPR - Curitiba</p>
+  - image: people/Marco_Aurelio_Figura.JPG
+    image_circular: false
+    more_info: >
+      <p><strong>Marco Aurelio Figura</strong></p>
+      <p>Doutorado</p>
+      <p>UFPR - Curitiba</p>
 ---

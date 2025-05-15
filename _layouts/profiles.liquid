@@ -4,33 +4,58 @@ layout: page
 <div class="post">
   <article>
     {% if page.profiles %}
-      {% for profile in page.profiles %}
-        <hr>
-        <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
-          {% if profile.image %}
-            {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
-            {% if profile.image_circular %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-            {% else %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-            {% endif %}
-            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
-            {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
-          {% endif %}
-          {% if profile.more_info %}
-            <div class="more-info">{{ profile.more_info }}</div>
-          {% endif %}
-        </div>
-
-        <div class="clearfix">
-          {% if profile.content %}
-            {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
-            {{ profile_content | markdownify }}
-          {% else %}
-            {{ content }}
-          {% endif %}
-        </div>
-      {% endfor %}
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+        {% for profile in page.profiles %}
+          <div class="col mb-4">
+            <div class="card h-100">
+              {% if profile.image %}
+                {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+                {% if profile.image_circular %}
+                  {% assign profile_image_class = 'card-img-top img-fluid z-depth-1 rounded-circle mx-auto mt-3' %}
+                {% else %}
+                  {% assign profile_image_class = 'card-img-top img-fluid z-depth-1 rounded mx-auto mt-3' %}
+                {% endif %}
+                {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.25}}px, (min-width: 992px) 25vw, (min-width: 768px) 50vw, 95vw"{% endcapture %}
+                {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image style="max-width:80%; height:auto;" %}
+              {% endif %}
+              
+              <div class="card-body text-center">
+                {% if profile.more_info %}
+                  <div class="more-info">{{ profile.more_info }}</div>
+                {% endif %}
+                <div class="social-icons">
+                  {% if profile.linkedin %}
+                    <a href="{{ profile.linkedin }}" target="_blank" title="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
+                  {% endif %}
+                  {% if profile.orcid %}
+                    <a href="https://orcid.org/{{ profile.orcid }}" target="_blank" title="ORCID"><i class="ai ai-orcid fa-lg"></i></a>
+                  {% endif %}
+                  {% if profile.googlescholar %}
+                    <a href="{{ profile.googlescholar }}" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar fa-lg"></i></a>
+                  {% endif %}
+                  {% if profile.researchgate %}
+                    <a href="{{ profile.researchgate }}" target="_blank" title="ResearchGate"><i class="fab fa-researchgate fa-lg"></i></a>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
     {% endif %}
   </article>
 </div>
+
+<style>
+  .social-icons {
+    margin-top: 10px;
+  }
+  .social-icons a {
+    margin: 0 5px;
+    color: var(--global-text-color);
+    transition: color 0.3s ease;
+  }
+  .social-icons a:hover {
+    color: var(--global-theme-color);
+  }
+</style>

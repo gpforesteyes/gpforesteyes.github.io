@@ -1,14 +1,13 @@
 ---
 layout: page
-title: projects
+title: Projetos
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Projetos em Andamento
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [Projetos de Pesquisa]
 horizontal: false
 ---
-
 <!-- pages/projects.md -->
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}
