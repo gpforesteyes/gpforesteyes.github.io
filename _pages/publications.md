@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publicações
-description: Publicações por categoria em ordem cronologica reversa, feita por jekyll-scholar.
+description: #Publicações por categoria em ordem cronologica reversa, feita por jekyll-scholar.
 nav: true
 nav_order: 2
 ---

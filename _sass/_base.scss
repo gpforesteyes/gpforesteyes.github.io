@@ -199,6 +199,7 @@ ul.task-list input[type="checkbox"] {
     margin-bottom: 5px;
     margin-top: 5px;
     font-family: monospace;
+    font-size: 0.875rem;
 
     p {
       display: inline-block;
@@ -215,7 +216,7 @@ ul.task-list input[type="checkbox"] {
   margin-right: 1rem;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 576px) { //576 px
   .profile {
     width: 30%;
 
