@@ -41,7 +41,7 @@ profiles:
   - image: people/Prof_Alvaro.jpg
     image_circular: false
     more_info: >
-      <p><strong>Álvaro Luís Pasquetti Berghetti/strong></p>
+      <p><strong>Álvaro Luís Pasquetti Berghetti</strong></p>
       <p>Pesquisador Colaborador</p>
       <p>UFPR - Curitiba</p>
     linkedin: 
@@ -79,9 +79,18 @@ profiles:
     more_info: >
       <p><strong>Adriane Mallmann</strong></p>
       <p>Pós-Doutorado</p>
-      <p>BIOFIX - Curitiba</p>
+      <p>UFPR - Curitiba</p>
     linkedin: https://www.linkedin.com/in/adriane-mallmann/
     orcid: 0000-0002-5588-9877
+
+  - image: people/Aluno_Augusto.jpg
+    image_circular: false
+    more_info: >
+      <p><strong>José Augusto Jaspiazzi</strong></p>
+      <p>Pós-Doutorado</p>
+      <p>UFPR - Curitiba</p>
+    linkedin: https://www.linkedin.com/in/jaspiazzi/ 
+    orcid: 0000-0001-8870-5942 
 
   - image: people/Aluno_Fabiano.jpg
     image_circular: false
@@ -116,7 +125,7 @@ profiles:
       <p><strong>Lina Mayra Reis Galvão</strong></p>
       <p>Mestrado</p>
       <p>UFPR - Curitiba</p>
-    linkedin: inkedin.com/in/linagalvao/
+    linkedin: https://www.linkedin.com/in/linagalvao
     orcid: 0009-0000-8012-5249
 
   - image: people/Aluno_Carla.jpg
@@ -146,14 +155,6 @@ profiles:
     linkedin: https://www.linkedin.com/in/marco-aurelio-figura-2b8b74174/
     orcid: 0000-0002-9740-7717 
 
-  - image: people/Aluno_Augusto.jpg
-    image_circular: false
-    more_info: >
-      <p><strong>José Augusto Jaspiazzi</strong></p>
-      <p>Pós-Doutorado</p>
-      <p>UFPR - Curitiba</p>
-    linkedin: https://www.linkedin.com/in/jaspiazzi/ 
-    orcid: 0000-0001-8870-5942 
 
   - image: people/Aluno_Lucas.jpg
     image_circular: false
@@ -219,8 +220,8 @@ profiles:
   - image: people/Aluno_Rebecca.jpeg
     image_circular: false
     more_info: >
-      <p><strong>Doutorado/strong></p>
-      <p>Graduação</p>
+      <p><strong>Rebecca Araújo Garcia</strong></p>
+      <p>Doutorado</p>
       <p>UFPR - Curitiba</p>
     linkedin: https://www.linkedin.com/in/rebeccaaraujo-engflorestal/ 
     orcid: 0009-0001-7247-4649 
