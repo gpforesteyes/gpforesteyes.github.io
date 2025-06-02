@@ -31,47 +31,79 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
-<div style="text-align: justify;">
 <style>
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  backdrop-filter: blur(1px);
+}
+
+[data-theme='dark'] .video-overlay {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+[data-theme='light'] .video-overlay {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+  background: transparent;
+}
+
 .justify-text {
   font-size: 1.1rem;
   line-height: 1.5;
   color: var(--global-text-color);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 .justify-text p {
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-.video-container {
-  width: 100%;
-  margin: 2rem auto;
-}
-
-.video-container video {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  display: cover;
-  margin: 0 auto;
+  margin-bottom: 0.6rem;
+  margin-top: 0.6rem;
 }
 </style>
 
-<div class="justify-text">
-<p>    O Grupo de pesquisa FORESTEYES atua na Universidade Federal do Paraná (UFPR) dentro do Setor de Ciências Agrárias.  Trata-se de um grupo de pesquisa certificado pelo Diretório dos Grupos de Pesquisa no Brasil - CNPq, desde março de 2018. Tem atuado junto ao Programa de Pós-graduação em Engenharia Florestal, MBA Manejo Florestal de Precisão, MBA Projetos Sustentáveis e Inovações Ambientais  e ao curso de graduação em Engenharia Florestal.</p>
-
-<p>    Temos nos dedicado ao desenvolvimento de metodologias avançadas e integração de geotecnologias e para a melhoria nas estimativas dos ambientes florestais. Procuramos integrar as demandas de empresas e instituições, utilizando avanços técnicos e tecnológicos em diversas áreas da Engenharia Florestal e Recursos Naturais.</p>
-
-<p>Explore nosso site para conhecer nossas linhas de pesquisa, nossa equipe e o impacto de nossos trabalhos.</p>
-
-</div>
-
-<div class="video-container">
+<div class="video-background">
   <video autoplay loop muted playsinline>
     <source src="assets/video/video_2.mp4" type="video/mp4">
     Seu navegador não suporta o elemento de vídeo.
   </video>
 </div>
+<div class="video-overlay"></div>
 
+<div class="content-wrapper">
+  <div style="text-align: justify;">
+    <div class="justify-text">
+      <p>O Grupo de pesquisa FORESTEYES atua na Universidade Federal do Paraná (UFPR) dentro do Setor de Ciências Agrárias.  Trata-se de um grupo de pesquisa certificado pelo Diretório dos Grupos de Pesquisa no Brasil - CNPq, desde março de 2018. Tem atuado junto ao Programa de Pós-graduação em Engenharia Florestal, MBA Manejo Florestal de Precisão, MBA Projetos Sustentáveis e Inovações Ambientais  e ao curso de graduação em Engenharia Florestal.</p>
+
+      <p>Temos nos dedicado ao desenvolvimento de metodologias avançadas e integração de geotecnologias e para a melhoria nas estimativas dos ambientes florestais. Procuramos integrar as demandas de empresas e instituições, utilizando avanços técnicos e tecnológicos em diversas áreas da Engenharia Florestal e Recursos Naturais.</p>
+
+      <p>Explore nosso site para conhecer nossas linhas de pesquisa, nossa equipe e o impacto de nossos trabalhos.</p>
+    </div>
+  </div>
 </div>
