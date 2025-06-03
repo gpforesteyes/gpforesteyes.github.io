@@ -3,6 +3,7 @@ layout: default
 ---
 <div class="post">
   <header class="post-header">
+    {% unless site.title == 'blank' or page.title == 'blank' or page.title == '.' %}
     <h1 class="post-title">
       {% if site.title == 'blank' %}
         <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
@@ -11,7 +12,10 @@ layout: default
         {{ site.title }}
       {% endif %}
     </h1>
+    {% endunless %}
+    {% if page.subtitle and page.subtitle != '' %}
     <p class="desc">{{ page.subtitle }}</p>
+    {% endif %}
   </header>
 
   <article>
@@ -65,6 +69,7 @@ layout: default
     {% endif %}
 
     <!-- Social -->
+    {% unless page.title == '.' %}
     {% if page.social %}
       <div class="social">
         <div class="contact-icons">{% include social.liquid %}</div>
@@ -72,6 +77,7 @@ layout: default
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
     {% endif %}
+    {% endunless %}
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
       {% include newsletter.liquid center=true %}

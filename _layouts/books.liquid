@@ -1,0 +1,227 @@
+---
+layout: default
+---
+<div class="post">
+  <header class="post-header">
+    {% unless site.title == 'blank' or page.title == 'blank' or page.title == '.' %}
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% endunless %}
+    {% if page.subtitle and page.subtitle != '' %}
+    <p class="desc">{{ page.subtitle }}</p>
+    {% endif %}
+  </header>
+
+  <article>
+    <div class="books-container">
+      <div class="books-intro">
+        {{ content }}
+      </div>
+
+      <div class="books-grid">
+        {% for book in page.books %}
+        <div class="book-card">
+          <div class="book-layout">
+            <div class="book-cover">
+              {% assign book_cover_path = book.cover | prepend: 'assets/img/book_covers/' %}
+              {% include figure.liquid loading="eager" path=book_cover_path class="book-image" alt="" %}
+            </div>
+            <div class="book-info">
+              <h3 class="book-title">{{ book.title }}</h3>
+              {% if book.authors %}
+              <p class="book-authors">{{ book.authors }}</p>
+              {% endif %}
+              <p class="book-description">{{ book.description }}</p>
+              <div class="book-actions">
+                <a href="{{ book.link }}" class="book-download-btn" target="_blank" rel="noopener noreferrer">
+                  <span>Download</span>
+                  <i class="fas fa-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Social -->
+    {% unless page.title == '.' %}
+    {% if page.social %}
+      <div class="social">
+        <div class="contact-icons">{% include social.liquid %}</div>
+        <div class="contact-note">{{ site.contact_note }}</div>
+      </div>
+    {% endif %}
+    {% endunless %}
+  </article>
+</div>
+
+<style>
+.books-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.books-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--global-text-color);
+}
+
+.books-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.book-card {
+  background: var(--global-card-bg-color);
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid var(--global-divider-color);
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.book-layout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 2rem;
+  align-items: start;
+  padding: 2rem;
+}
+
+.book-cover {
+  width: 250px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.book-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover .book-image {
+  transform: scale(1.02);
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 350px;
+}
+
+.book-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--global-text-color);
+  margin-bottom: 0.8rem;
+  line-height: 1.3;
+}
+
+.book-authors {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--global-theme-color);
+  margin-bottom: 1rem;
+}
+
+.book-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--global-text-color-light);
+  margin-bottom: 2rem;
+  flex-grow: 1;
+}
+
+.book-actions {
+  margin-top: auto;
+}
+
+.book-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  background: var(--global-theme-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.book-download-btn:hover {
+  background: #2c5f3f;
+  transform: translateX(2px);
+  text-decoration: none;
+  color: white;
+}
+
+.book-download-btn i {
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.book-download-btn:hover i {
+  transform: translateX(3px);
+}
+
+/* Dark theme adjustments */
+[data-theme='dark'] .book-card {
+  background: var(--global-card-bg-color);
+  border-color: var(--global-divider-color);
+}
+
+[data-theme='dark'] .book-cover {
+  background: #000000;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .book-layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  
+  .book-cover {
+    width: 200px;
+    height: 280px;
+    margin: 0 auto;
+  }
+  
+  .book-info {
+    min-height: auto;
+  }
+  
+  .books-container {
+    padding: 1rem;
+  }
+  
+  .books-grid {
+    gap: 2rem;
+  }
+}
+</style> 

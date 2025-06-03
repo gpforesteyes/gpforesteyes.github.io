@@ -1,14 +1,35 @@
 ---
-layout: book-shelf
-title: Biblioteca
+layout: books
+title: Livros
 permalink: /books/
-nav: false
-collection: books
-nav_order: 6
+nav: true
+nav_order: 4
+subtitle: Livros publicados
+
+books:
+  - title: "QGIS Aplicado ao Manejo Florestal"
+    # authors: "Grupo FORESTEYES"
+    cover: "QGIS_book.png"
+    description: "Um guia completo sobre o uso do QGIS em aplicações florestais. Este livro apresenta técnicas práticas de geoprocessamento, análise espacial e visualização de dados para profissionais e estudantes da área florestal. Inclui estudos de caso reais e exercícios práticos."
+    link: "https://github.com/anadallacorte/LIVROQGIS2020"
+    
+  - title: "LiDAR em Ciências Florestais"
+    # authors: "Grupo FORESTEYES"
+    cover: "LIDAR_book.png"
+    description: "Explore as aplicações da tecnologia LiDAR na Engenharia Florestal. O livro aborda desde os conceitos básicos até aplicações avançadas em inventário florestal, modelagem de biomassa e monitoramento de ecossistemas. Inclui tutoriais práticos e software específico."
+    link: "https://github.com/anadallacorte/Livro_Lidar"
+    
+  - title: "R para Análises Florestais"
+    # authors: "Grupo FORESTEYES"
+    cover: "R_book.png" 
+    description: "Domine a linguagem R aplicada às ciências florestais. Este manual oferece uma introdução completa ao R com foco em análises estatísticas, modelagem de dados florestais, visualização de resultados e automação de processos. Ideal para pesquisadores e profissionais."
+    link: "https://github.com/anadallacorte/LIVRO_R"
+
+social: true
 ---
 
-> What an astonishing thing a book is. It's a flat object made from a tree with flexible parts on which are imprinted lots of funny dark squiggles. But one glance at it and you're inside the mind of another person, maybe somebody dead for thousands of years. Across the millennia, an author is speaking clearly and silently inside your head, directly to you. Writing is perhaps the greatest of human inventions, binding together people who never knew each other, citizens of distant epochs. Books break the shackles of time. A book is proof that humans are capable of working magic.
->
-> -- Carl Sagan, Cosmos, Part 11: The Persistence of Memory (1980)
+O Grupo de Pesquisa **FORESTEYES** tem o compromisso de democratizar o conhecimento científico e tecnológico na área florestal. 
 
-## Books that I am reading, have read, or will read
+Nossos livros são disponibilizados gratuitamente para estudantes, pesquisadores e profissionais interessados em aplicar tecnologias modernas na Engenharia Florestal e áreas correlatas.
+
+Cada publicação foi desenvolvida com base em nossa experiência prática em projetos de pesquisa e parcerias com o setor produtivo, oferecendo conteúdo atualizado e aplicável.

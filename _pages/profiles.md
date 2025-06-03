@@ -95,11 +95,11 @@ profiles:
   - image: people/Aluno_Fabiano.jpg
     image_circular: false
     more_info: >
-      <p><strong>Fabiano</strong></p>
+      <p><strong>Fabiano Rodrigues Pereira</strong></p>
       <p>Doutorado</p>
       <p>UFPR - Curitiba</p>
-    linkedin: 
-    orcid: 
+    linkedin: https://www.linkedin.com/in/fabiano-rodrigues-pereira-20122917b/
+    orcid: 0000-0001-5357-118X
 
   - image: people/Aluno_Leticia.jpg
     image_circular: false
@@ -195,7 +195,7 @@ profiles:
   - image: people/Aluno_Kauna.jpg
     image_circular: false
     more_info: >
-      <p><strong>Kauana</strong></p>
+      <p><strong>Kauana Engel</strong></p>
       <p>Pós-Doutorado</p>
       <p>UFPR - Curitiba</p>
     linkedin: https://www.linkedin.com/in/kauana-engel-300760a1/
