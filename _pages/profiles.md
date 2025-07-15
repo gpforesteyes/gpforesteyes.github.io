@@ -73,25 +73,7 @@ profiles:
       <p>UFPR - Curitiba</p>
     linkedin: 
     orcid: 
-
-  - image: people/Aluno_Adriane.jpg
-    image_circular: false
-    more_info: >
-      <p><strong>Adriane Mallmann</strong></p>
-      <p>Pós-Doutorado</p>
-      <p>UFPR - Curitiba</p>
-    linkedin: https://www.linkedin.com/in/adriane-mallmann/
-    orcid: 0000-0002-5588-9877
-
-  - image: people/Aluno_Augusto.jpg
-    image_circular: false
-    more_info: >
-      <p><strong>José Augusto Jaspiazzi</strong></p>
-      <p>Pós-Doutorado</p>
-      <p>UFPR - Curitiba</p>
-    linkedin: https://www.linkedin.com/in/jaspiazzi/ 
-    orcid: 0000-0001-8870-5942 
-
+ 
   - image: people/Aluno_Fabiano.jpg
     image_circular: false
     more_info: >
