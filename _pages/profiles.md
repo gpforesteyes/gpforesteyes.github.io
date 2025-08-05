@@ -74,6 +74,15 @@ profiles:
     linkedin: 
     orcid: 
  
+  - image: people/mariaemilia.jpeg
+    image_circular: false
+    more_info: >
+      <p><strong>Maria Emília</strong></p>
+      <p>Técnica de Laboratório</p>
+      <p>UFPR - Curitiba</p>
+    linkedin: 
+    orcid: 
+
   - image: people/Aluno_Fabiano.jpg
     image_circular: false
     more_info: >
@@ -208,4 +217,30 @@ profiles:
     linkedin: https://www.linkedin.com/in/rebeccaaraujo-engflorestal/ 
     orcid: 0009-0001-7247-4649 
 
+  - image: people/Aluno_Rebecca.jpeg
+    image_circular: false
+    more_info: >
+      <p><strong>Rebecca Araújo Garcia</strong></p>
+      <p>Doutorado</p>
+      <p>UFPR - Curitiba</p>
+    linkedin: https://www.linkedin.com/in/rebeccaaraujo-engflorestal/ 
+    orcid: 0009-0001-7247-4649 
+
+  - image: people/lucca.jpeg
+    image_circular: false
+    more_info: >
+      <p><strong>Lucca Ferraz Bueno</strong></p>
+      <p>Graduação</p>
+      <p>UFPR - Curitiba</p>
+    linkedin: 
+    orcid:
+
+  - image: people/matheus.jpeg
+    image_circular: false
+    more_info: >
+      <p><strong>Mateus Dos Santos</strong></p>
+      <p>Graduação</p>
+      <p>UFPR - Curitiba</p>
+    linkedin: 
+    orcid: 
 ---
