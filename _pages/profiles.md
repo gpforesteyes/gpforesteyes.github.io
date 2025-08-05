@@ -160,7 +160,7 @@ profiles:
     image_circular: false
     more_info: >
       <p><strong>Natiele Caumo Mezacasa</strong></p>
-      <p>Graduação</p>
+      <p>Mestrado</p>
       <p>UFPR - Curitiba</p>
     linkedin: 
     orcid: 
@@ -178,7 +178,7 @@ profiles:
     image_circular: false
     more_info: >
       <p><strong>Jordan Modesto</strong></p>
-      <p>Mestrado</p>
+      <p>Doutorado</p>
       <p>UFPR - Curitiba</p>
     linkedin: 
     orcid: 
@@ -217,22 +217,13 @@ profiles:
     linkedin: https://www.linkedin.com/in/rebeccaaraujo-engflorestal/ 
     orcid: 0009-0001-7247-4649 
 
-  - image: people/Aluno_Rebecca.jpeg
-    image_circular: false
-    more_info: >
-      <p><strong>Rebecca Araújo Garcia</strong></p>
-      <p>Doutorado</p>
-      <p>UFPR - Curitiba</p>
-    linkedin: https://www.linkedin.com/in/rebeccaaraujo-engflorestal/ 
-    orcid: 0009-0001-7247-4649 
-
   - image: people/lucca.jpeg
     image_circular: false
     more_info: >
       <p><strong>Lucca Ferraz Bueno</strong></p>
       <p>Graduação</p>
       <p>UFPR - Curitiba</p>
-    linkedin: 
+    linkedin: https://br.linkedin.com/in/lucca-bueno-061b992b1?trk=people-guest_people_search-card
     orcid:
 
   - image: people/matheus.jpeg
