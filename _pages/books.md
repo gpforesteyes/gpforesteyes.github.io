@@ -11,7 +11,7 @@ books:
     # authors: "Grupo FORESTEYES"
     cover: "QGIS_book.png"
     description: "Um guia completo sobre o uso do QGIS em aplicações florestais. Este livro apresenta técnicas práticas de geoprocessamento, análise espacial e visualização de dados para profissionais e estudantes da área florestal. Inclui estudos de caso reais e exercícios práticos."
-    link: "https://github.com/anadallacorte/LIVROQGIS2020"
+    link: "https://zenodo.org/uploads/15923958" #"https://github.com/anadallacorte/LIVROQGIS2020"
     
   - title: "LiDAR em Ciências Florestais"
     # authors: "Grupo FORESTEYES"
@@ -24,6 +24,12 @@ books:
     cover: "R_book.png" 
     description: "Domine a linguagem R aplicada às ciências florestais. Este manual oferece uma introdução completa ao R com foco em análises estatísticas, modelagem de dados florestais, visualização de resultados e automação de processos. Ideal para pesquisadores e profissionais."
     link: "https://github.com/anadallacorte/LIVRO_R"
+
+  - title: "Spring"
+    # authors: "Grupo FORESTEYES"
+    cover: "spring.png" 
+    description: "O livro Processamento Digital de Imagens com o SPRING 5.5.1: Exercícios Guiados, de Ana Paula Dalla Corte, Ana Paula Franco e Carlos Roberto Sanquetta, está disponível gratuitamente para acesso em:"
+    link: "https://zenodo.org/records/15922443"
 
 social: true
 ---
