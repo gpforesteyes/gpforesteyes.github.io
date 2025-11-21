@@ -3,10 +3,17 @@ layout: books
 title: Livros
 permalink: /books/
 nav: true
-nav_order: 4
+nav_order: 5
 subtitle: Livros publicados
 
 books:
+- title: "Sensoriamento Remoto com o Google Earth Engine (GEE): um enfoque para a Engenharia Florestal"
+    # authors: "Grupo FORESTEYES"
+    cover: "QGIS_book.png"
+    description: "Apresenta uma introdução prática e aplicada ao uso da plataforma GEE para análises geoespaciais voltadas ao setor florestal. A obra destaca ferramentas, exemplos e aplicações reais para mapeamento, monitoramento e tomada de decisão em manejo e conservação de recursos naturais.."
+    link: "https://forms.gle/FqvcdSdScFBnQxXD7"
+
+
   - title: "QGIS Aplicado ao Manejo Florestal"
     # authors: "Grupo FORESTEYES"
     cover: "QGIS_book.png"
