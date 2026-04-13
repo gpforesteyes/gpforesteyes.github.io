@@ -137,16 +137,6 @@ profiles:
     linkedin: 
     orcid: 
 
-  - image: people/Figura.JPG
-    image_circular: false
-    more_info: >
-      <p><strong>Marco Aurelio Figura</strong></p>
-      <p>Doutorado</p>
-      <p>UFPR - Curitiba</p>
-    linkedin: https://www.linkedin.com/in/marco-aurelio-figura-2b8b74174/
-    orcid: 0000-0002-9740-7717 
-
-
   - image: people/Amanda.jpg
     image_circular: false
     more_info: >
@@ -234,4 +224,14 @@ profiles:
       <p>UFPR - Curitiba</p>
     linkedin: 
     orcid: 
+
+  - image: people/Figura.JPG
+    image_circular: false
+    more_info: >
+      <p><strong>Marco Aurelio Figura</strong></p>
+      <p>Doutorado</p>
+      <p>UFPR - Curitiba</p>
+    linkedin: https://www.linkedin.com/in/marco-aurelio-figura-2b8b74174/
+    orcid: 0000-0002-9740-7717 
+
 ---
