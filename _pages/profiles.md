@@ -176,7 +176,7 @@ profiles:
   - image: people/Daniela.jpeg
     image_circular: false
     more_info: >
-      <p><strong>Daniele Albini</strong></p>
+      <p><strong>Daniela Albini</strong></p>
       <p>Graduação</p>
       <p>UFPR - Curitiba</p>
     linkedin: 
