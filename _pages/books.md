@@ -23,13 +23,13 @@ books:
     # authors: "Grupo FORESTEYES"
     cover: "LIDAR_book.png"
     description: "Explore as aplicações da tecnologia LiDAR na Engenharia Florestal. O livro aborda desde os conceitos básicos até aplicações avançadas em inventário florestal, modelagem de biomassa e monitoramento de ecossistemas. Inclui tutoriais práticos e software específico."
-    link: "https://github.com/anadallacorte/Livro_Lidar"
+    link: "https://github.com/anacorte/Livro_Lidar"
 
   - title: "R para Análises Florestais"
     # authors: "Grupo FORESTEYES"
     cover: "R_book.png"
     description: "Domine a linguagem R aplicada às ciências florestais. Este manual oferece uma introdução completa ao R com foco em análises estatísticas, modelagem de dados florestais, visualização de resultados e automação de processos. Ideal para pesquisadores e profissionais."
-    link: "https://github.com/anadallacorte/LIVRO_R"
+    link: "https://github.com/anacorte/LIVRO_R"
 
   - title: "Spring"
     # authors: "Grupo FORESTEYES"
