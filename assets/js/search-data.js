@@ -57,7 +57,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-sistema-de-amostragem-e-inteligência-artificial-para-estimativas-da-biomassa-abaixo-do-solo-bgb",
           title: 'Sistema de amostragem e Inteligência Artificial para Estimativas da Biomassa Abaixo do Solo...',
-          description: "Below Ground Biomass",
+          description: "Biomassa Abaixo do Solo",
           section: "Projects",handler: () => {
               window.location.href = "/projects/BGB/";
             },},{id: "projects-jcarbon-plus",
