@@ -45,6 +45,20 @@
           {% assign sorted_pages = site.pages | sort: 'nav_order' %}
           {% for p in sorted_pages %}
             {% if p.nav and p.autogen == null %}
+              {%- comment -%} Map permalink to an i18n key so JS can swap titles {%- endcomment -%}
+              {%- assign i18n_key = '' -%}
+              {%- case p.permalink -%}
+                {%- when '/about/' -%}{%- assign i18n_key = 'nav.about' -%}
+                {%- when '/publications/' -%}{%- assign i18n_key = 'nav.publications' -%}
+                {%- when '/projects/' -%}{%- assign i18n_key = 'nav.projects' -%}
+                {%- when '/books/' -%}{%- assign i18n_key = 'nav.books' -%}
+                {%- when '/people/' -%}{%- assign i18n_key = 'nav.team' -%}
+                {%- when '/news/' -%}{%- assign i18n_key = 'nav.news' -%}
+                {%- when '/blog/' -%}{%- assign i18n_key = 'nav.blog' -%}
+                {%- when '/cv/' -%}{%- assign i18n_key = 'nav.cv' -%}
+                {%- when '/teaching/' -%}{%- assign i18n_key = 'nav.teaching' -%}
+                {%- when '/repositories/' -%}{%- assign i18n_key = 'nav.repositories' -%}
+              {%- endcase -%}
               {% if p.dropdown %}
                 {% assign has_active_child = false %}
                 {% for child in p.children %}
@@ -62,7 +76,7 @@
                     aria-haspopup="true"
                     aria-expanded="false"
                   >
-                    {{- p.title }}
+                    <span{% if i18n_key != '' %} data-i18n="{{ i18n_key }}"{% endif %}>{{- p.title -}}</span>
                     {% if page.title == p.title or has_active_child %}
                       <span class="sr-only">(current)</span>
                     {% endif %}
@@ -72,9 +86,23 @@
                       {% if child.title == 'divider' %}
                         <div class="dropdown-divider"></div>
                       {% else %}
+                        {%- assign child_i18n_key = '' -%}
+                        {%- case child.permalink -%}
+                          {%- when '/about/' -%}{%- assign child_i18n_key = 'nav.about' -%}
+                          {%- when '/publications/' -%}{%- assign child_i18n_key = 'nav.publications' -%}
+                          {%- when '/projects/' -%}{%- assign child_i18n_key = 'nav.projects' -%}
+                          {%- when '/books/' -%}{%- assign child_i18n_key = 'nav.books' -%}
+                          {%- when '/people/' -%}{%- assign child_i18n_key = 'nav.team' -%}
+                          {%- when '/news/' -%}{%- assign child_i18n_key = 'nav.news' -%}
+                          {%- when '/blog/' -%}{%- assign child_i18n_key = 'nav.blog' -%}
+                          {%- when '/cv/' -%}{%- assign child_i18n_key = 'nav.cv' -%}
+                          {%- when '/teaching/' -%}{%- assign child_i18n_key = 'nav.teaching' -%}
+                          {%- when '/repositories/' -%}{%- assign child_i18n_key = 'nav.repositories' -%}
+                        {%- endcase -%}
                         <a
                           class="dropdown-item {% if page.title == child.title %}active{% endif %}"
                           href="{% if child.permalink contains '://' %}{{ child.permalink }}{% else %}{{ child.permalink | relative_url }}{% endif %}"
+                          {% if child_i18n_key != '' %}data-i18n="{{ child_i18n_key }}"{% endif %}
                         >
                           {{- child.title -}}
                         </a>
@@ -93,7 +121,7 @@
                     {%- assign url = p.url -%}
                   {%- endif %}
                   <a class="nav-link" href="{{ url | relative_url }}">
-                    {{- p.title }}
+                    <span{% if i18n_key != '' %} data-i18n="{{ i18n_key }}"{% endif %}>{{- p.title -}}</span>
                     {% if page.url contains p.url %}
                       <span class="sr-only">(current)</span>
                     {% endif %}
@@ -120,6 +148,39 @@
               </button>
             </li>
           {% endif %}
+          <!-- Toggle language (PT-BR / EN) -->
+          <li class="toggle-container">
+            <button
+              id="lang-toggle"
+              type="button"
+              title="Mudar idioma / Switch language"
+              aria-label="Mudar idioma / Switch language"
+              data-i18n-title="lang.toggle.title"
+            >
+              <span class="lang-flag lang-flag-pt" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 20">
+                  <rect width="28" height="20" fill="#009C3B"/>
+                  <polygon points="14,2 26,10 14,18 2,10" fill="#FFDF00"/>
+                  <circle cx="14" cy="10" r="4" fill="#002776"/>
+                </svg>
+              </span>
+              <span class="lang-flag lang-flag-en" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 20">
+                  <rect width="28" height="20" fill="#B22234"/>
+                  <g fill="#fff">
+                    <rect y="1.54" width="28" height="1.54"/>
+                    <rect y="4.62" width="28" height="1.54"/>
+                    <rect y="7.69" width="28" height="1.54"/>
+                    <rect y="10.77" width="28" height="1.54"/>
+                    <rect y="13.85" width="28" height="1.54"/>
+                    <rect y="16.92" width="28" height="1.54"/>
+                  </g>
+                  <rect width="11.2" height="10.77" fill="#3C3B6E"/>
+                </svg>
+              </span>
+              <span class="lang-code" data-i18n="lang.code">PT-BR</span>
+            </button>
+          </li>
         </ul>
       </div>
     </div>

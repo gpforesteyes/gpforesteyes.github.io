@@ -2,7 +2,9 @@
 layout: profiles
 permalink: /people/
 title: Equipe
+title_i18n: nav.team
 description: Membros do grupo de pesquisa
+description_i18n: profiles.description
 nav: true
 nav_order: 5
 
@@ -14,7 +16,7 @@ profiles:
     image_circular: false
     more_info: >
       <p><strong>Ana Paula Dalla Corte</strong></p>
-      <p>Coordenadora</p>
+      <p><span data-i18n="profile.role.coordinator">Coordenadora</span></p>
       <p>UFPR - Curitiba</p>
     linkedin: https://www.linkedin.com/in/anapauladallacorte/
     orcid: 0000-0001-8529-5554
@@ -24,7 +26,7 @@ profiles:
     image_circular: false
     more_info: >
       <p><strong>Carlos Sanquetta</strong></p>
-      <p>Pesquisador Colaborador</p>
+      <p><span data-i18n="profile.role.collaborator">Pesquisador Colaborador</span></p>
       <p>UFPR Curitiba</p>
     linkedin: https://www.linkedin.com/in/carlos-sanquetta-7a585237/ 
     orcid: 0000-0001-6277-6371 
@@ -33,7 +35,7 @@ profiles:
     image_circular: false
     more_info: >
       <p><strong>Alexandre Behling</strong></p>
-      <p>Pesquisador Colaborador</p>
+      <p><span data-i18n="profile.role.collaborator">Pesquisador Colaborador</span></p>
       <p>UFPR - Curitiba</p>
     linkedin: 
     orcid: 0000-0002-7032-2721 
@@ -42,7 +44,7 @@ profiles:
     image_circular: false
     more_info: >
       <p><strong>Álvaro Luís Pasquetti Berghetti</strong></p>
-      <p>Pesquisador Colaborador</p>
+      <p><span data-i18n="profile.role.collaborator">Pesquisador Colaborador</span></p>
       <p>UFPR - Curitiba</p>
     linkedin: 
     orcid: 
@@ -51,7 +53,7 @@ profiles:
     image_circular: false
     more_info: >
       <p><strong>Angelo</strong></p>
-      <p>Pesquisador Colaborador</p>
+      <p><span data-i18n="profile.role.collaborator">Pesquisador Colaborador</span></p>
       <p>UFPR - Curitiba</p>
     linkedin: 
     orcid: 
@@ -60,7 +62,7 @@ profiles:
     image_circular: false
     more_info: >
       <p><strong>Jaime</strong></p>
-      <p>Pesquisador Colaborador</p>
+      <p><span data-i18n="profile.role.collaborator">Pesquisador Colaborador</span></p>
       <p>UFPR - Curitiba</p>
     linkedin: 
     orcid: 
@@ -69,7 +71,7 @@ profiles:
     image_circular: false
     more_info: >
       <p><strong>Hassan</strong></p>
-      <p>Pesquisador Colaborador</p>
+      <p><span data-i18n="profile.role.collaborator">Pesquisador Colaborador</span></p>
       <p>UFPR - Curitiba</p>
     linkedin: 
     orcid: 
@@ -78,7 +80,7 @@ profiles:
     image_circular: false
     more_info: >
       <p><strong>Maria Emília</strong></p>
-      <p>Técnica de Laboratório</p>
+      <p><span data-i18n="profile.role.lab_technician">Técnica de Laboratório</span></p>
       <p>UFPR - Curitiba</p>
     linkedin: 
     orcid: 
@@ -87,7 +89,7 @@ profiles:
     image_circular: false
     more_info: >
       <p><strong>Fabiano Rodrigues Pereira</strong></p>
-      <p>Doutorado</p>
+      <p><span data-i18n="profile.role.phd">Doutorado</span></p>
       <p>UFPR - Curitiba</p>
     linkedin: https://www.linkedin.com/in/fabiano-rodrigues-pereira-20122917b/
     orcid: 0000-0001-5357-118X
@@ -96,7 +98,7 @@ profiles:
     image_circular: false
     more_info: >
       <p><strong>Leticia Maria Sella Marques Dias</strong></p>
-      <p>Mestrado</p>
+      <p><span data-i18n="profile.role.msc">Mestrado</span></p>
       <p>UFPR - Curitiba</p>
     linkedin: https://www.linkedin.com/in/leticia-sella/ 
     orcid: 
@@ -105,7 +107,7 @@ profiles:
     image_circular: false
     more_info: >
       <p><strong>Lucas Bielak Rezende</strong></p>
-      <p>Mestrado</p>
+      <p><span data-i18n="profile.role.msc">Mestrado</span></p>
       <p>UFPR - Curitiba</p>
     linkedin: https://www.linkedin.com/in/lucas-bielak-rezende-6b6455219/ 
     orcid: 
@@ -114,7 +116,7 @@ profiles:
     image_circular: false
     more_info: >
       <p><strong>Lina Mayra Reis Galvão</strong></p>
-      <p>Mestrado</p>
+      <p><span data-i18n="profile.role.msc">Mestrado</span></p>
       <p>UFPR - Curitiba</p>
     linkedin: https://www.linkedin.com/in/linagalvao
     orcid: 0009-0000-8012-5249
@@ -132,7 +134,7 @@ profiles:
     image_circular: false
     more_info: >
       <p><strong>Arandi</strong></p>
-      <p>Mestrado</p>
+      <p><span data-i18n="profile.role.msc">Mestrado</span></p>
       <p>UFPR - Curitiba</p>
     linkedin: 
     orcid: 
@@ -141,7 +143,7 @@ profiles:
     image_circular: false
     more_info: >
       <p><strong>Amanda Marcon</strong></p>
-      <p>Graduação</p>
+      <p><span data-i18n="profile.role.undergrad">Graduação</span></p>
       <p>UFPR - Curitiba</p>
     linkedin: 
     orcid: 
@@ -150,7 +152,7 @@ profiles:
     image_circular: false
     more_info: >
       <p><strong>Natiele Caumo Mezacasa</strong></p>
-      <p>Mestrado</p>
+      <p><span data-i18n="profile.role.msc">Mestrado</span></p>
       <p>UFPR - Curitiba</p>
     linkedin: 
     orcid: 
@@ -159,7 +161,7 @@ profiles:
     image_circular: false
     more_info: >
       <p><strong>Thais Chaves Almeida</strong></p>
-      <p>Doutorado</p>
+      <p><span data-i18n="profile.role.phd">Doutorado</span></p>
       <p>UFPR - Curitiba</p>
     linkedin: 
     orcid: 0000-0002-0027-0022
@@ -168,7 +170,7 @@ profiles:
     image_circular: false
     more_info: >
       <p><strong>Jordan Modesto</strong></p>
-      <p>Doutorado</p>
+      <p><span data-i18n="profile.role.phd">Doutorado</span></p>
       <p>UFPR - Curitiba</p>
     linkedin: 
     orcid: 
@@ -177,7 +179,7 @@ profiles:
     image_circular: false
     more_info: >
       <p><strong>Daniela Albini</strong></p>
-      <p>Graduação</p>
+      <p><span data-i18n="profile.role.undergrad">Graduação</span></p>
       <p>UFPR - Curitiba</p>
     linkedin: 
     orcid: 
@@ -186,14 +188,14 @@ profiles:
     image_circular: false
     more_info: >
       <p><strong>Isabella Volpini</strong></p>
-      <p>Graduação</p>
+      <p><span data-i18n="profile.role.undergrad">Graduação</span></p>
       <p>UFPR - Curitiba</p>
 
   # - image: people/Aluno_Nicole.jpg
   #   image_circular: false
   #   more_info: >
   #     <p><strong>Nicole</strong></p>
-  #     <p>Graduação</p>
+  #     <p><span data-i18n="profile.role.undergrad">Graduação</span></p>
   #     <p>UFPR - Curitiba</p>
   #   linkedin: 
   #   orcid: 
@@ -202,7 +204,7 @@ profiles:
     image_circular: false
     more_info: >
       <p><strong>Rebecca Araújo Garcia</strong></p>
-      <p>Doutorado</p>
+      <p><span data-i18n="profile.role.phd">Doutorado</span></p>
       <p>UFPR - Curitiba</p>
     linkedin: https://www.linkedin.com/in/rebeccaaraujo-engflorestal/ 
     orcid: 0009-0001-7247-4649 
@@ -211,7 +213,7 @@ profiles:
     image_circular: false
     more_info: >
       <p><strong>Lucca Ferraz Bueno</strong></p>
-      <p>Graduação</p>
+      <p><span data-i18n="profile.role.undergrad">Graduação</span></p>
       <p>UFPR - Curitiba</p>
     linkedin: https://br.linkedin.com/in/lucca-bueno-061b992b1?trk=people-guest_people_search-card
     orcid:
@@ -220,7 +222,7 @@ profiles:
     image_circular: false
     more_info: >
       <p><strong>Mateus Dos Santos</strong></p>
-      <p>Graduação</p>
+      <p><span data-i18n="profile.role.undergrad">Graduação</span></p>
       <p>UFPR - Curitiba</p>
     linkedin: 
     orcid: 
@@ -229,7 +231,7 @@ profiles:
     image_circular: false
     more_info: >
       <p><strong>Marco Aurelio Figura</strong></p>
-      <p>Doutorado</p>
+      <p><span data-i18n="profile.role.phd">Doutorado</span></p>
       <p>UFPR - Curitiba</p>
     linkedin: https://www.linkedin.com/in/marco-aurelio-figura-2b8b74174/
     orcid: 0000-0002-9740-7717 

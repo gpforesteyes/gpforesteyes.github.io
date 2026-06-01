@@ -84,6 +84,12 @@
   </script>
 {% endif %}
 
+<!-- Language switcher (PT-BR / EN) -->
+<script src="{{ '/assets/js/i18n.js' | relative_url | bust_file_cache }}"></script>
+<script>
+  initLang();
+</script>
+
 {% if page.map %}
   <!-- GeoJSON support via Leaflet -->
   <link

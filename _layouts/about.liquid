@@ -14,7 +14,7 @@ layout: default
     </h1>
     {% endunless %}
     {% if page.subtitle and page.subtitle != '' %}
-    <p class="desc">{{ page.subtitle }}</p>
+    <p class="desc"{% if page.subtitle_i18n %} data-i18n="{{ page.subtitle_i18n }}"{% endif %}>{{ page.subtitle }}</p>
     {% endif %}
   </header>
 
@@ -63,7 +63,7 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Publicações</a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit" data-i18n="about.publications.heading">Publicações</a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}

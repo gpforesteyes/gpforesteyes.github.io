@@ -4,10 +4,10 @@ layout: default
 <div class="post">
   <header class="post-header">
     {% unless site.title == 'blank' or page.title == 'blank' or page.title == '.' %}
-    <h1 class="post-title">{{ page.title }}</h1>
+    <h1 class="post-title"{% if page.title_i18n %} data-i18n="{{ page.title_i18n }}"{% endif %}>{{ page.title }}</h1>
     {% endunless %}
     {% if page.subtitle and page.subtitle != '' %}
-    <p class="desc">{{ page.subtitle }}</p>
+    <p class="desc"{% if page.subtitle_i18n %} data-i18n="{{ page.subtitle_i18n }}"{% endif %}>{{ page.subtitle }}</p>
     {% endif %}
   </header>
 
@@ -26,11 +26,21 @@ layout: default
               {% include figure.liquid loading="eager" path=book_cover_path class="book-image" alt="" %}
             </div>
             <div class="book-info">
-              <h3 class="book-title">{{ book.title }}</h3>
+              {% if book.title_en %}
+                <h3 class="book-title lang-pt-only">{{ book.title }}</h3>
+                <h3 class="book-title lang-en-only">{{ book.title_en }}</h3>
+              {% else %}
+                <h3 class="book-title">{{ book.title }}</h3>
+              {% endif %}
               {% if book.authors %}
               <p class="book-authors">{{ book.authors }}</p>
               {% endif %}
-              <p class="book-description">{{ book.description }}</p>
+              {% if book.description_en %}
+                <p class="book-description lang-pt-only">{{ book.description }}</p>
+                <p class="book-description lang-en-only">{{ book.description_en }}</p>
+              {% else %}
+                <p class="book-description">{{ book.description }}</p>
+              {% endif %}
               <div class="book-actions">
                 <a href="{{ book.link }}" class="book-download-btn" target="_blank" rel="noopener noreferrer">
                   <span>Download</span>
