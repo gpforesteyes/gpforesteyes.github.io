@@ -4,7 +4,7 @@ title: Livros
 title_i18n: nav.books
 permalink: /books/
 nav: true
-nav_order: 4
+nav_order: 5
 subtitle: Livros publicados
 subtitle_i18n: books.subtitle
 

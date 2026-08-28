@@ -6,7 +6,7 @@ permalink: /projects/
 description: Projetos em Andamento
 description_i18n: projects.description
 nav: true
-nav_order: 3
+nav_order: 4
 display_categories: [Projetos de Pesquisa]
 horizontal: false
 ---

@@ -50,6 +50,7 @@
               {%- case p.permalink -%}
                 {%- when '/about/' -%}{%- assign i18n_key = 'nav.about' -%}
                 {%- when '/publications/' -%}{%- assign i18n_key = 'nav.publications' -%}
+                {%- when '/noradar/' -%}{%- assign i18n_key = 'nav.noradar' -%}
                 {%- when '/projects/' -%}{%- assign i18n_key = 'nav.projects' -%}
                 {%- when '/books/' -%}{%- assign i18n_key = 'nav.books' -%}
                 {%- when '/people/' -%}{%- assign i18n_key = 'nav.team' -%}
@@ -90,6 +91,7 @@
                         {%- case child.permalink -%}
                           {%- when '/about/' -%}{%- assign child_i18n_key = 'nav.about' -%}
                           {%- when '/publications/' -%}{%- assign child_i18n_key = 'nav.publications' -%}
+                          {%- when '/noradar/' -%}{%- assign child_i18n_key = 'nav.noradar' -%}
                           {%- when '/projects/' -%}{%- assign child_i18n_key = 'nav.projects' -%}
                           {%- when '/books/' -%}{%- assign child_i18n_key = 'nav.books' -%}
                           {%- when '/people/' -%}{%- assign child_i18n_key = 'nav.team' -%}

@@ -11,6 +11,7 @@ const I18N_DICT = {
 
     "nav.about": "Sobre",
     "nav.publications": "Publicações",
+    "nav.noradar": "No Radar",
     "nav.projects": "Projetos",
     "nav.books": "Livros",
     "nav.team": "Equipe",
@@ -43,6 +44,8 @@ const I18N_DICT = {
     "projects.category.research": "Projetos de Pesquisa",
     "news.title": "Notícias",
     "publications.title": "Publicações",
+    "noradar.intro": "Artigos de outros autores, externos ao grupo, trazidos para discussão nas reuniões do ForestEyes.",
+    "noradar.instagram": "Para fotos e mais informações sobre as apresentações e discussões, acompanhe nosso",
 
     "profile.role.coordinator": "Coordenadora",
     "profile.role.collaborator": "Pesquisador Colaborador",
@@ -80,6 +83,7 @@ const I18N_DICT = {
 
     "nav.about": "About",
     "nav.publications": "Publications",
+    "nav.noradar": "On the Radar",
     "nav.projects": "Projects",
     "nav.books": "Books",
     "nav.team": "Team",
@@ -112,6 +116,8 @@ const I18N_DICT = {
     "projects.category.research": "Research Projects",
     "news.title": "News",
     "publications.title": "Publications",
+    "noradar.intro": "Papers by authors outside the group, brought in for discussion at ForestEyes meetings.",
+    "noradar.instagram": "For photos and more about the presentations and discussions, follow our",
 
     "profile.role.coordinator": "Coordinator",
     "profile.role.collaborator": "Collaborating Researcher",
