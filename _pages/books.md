@@ -9,6 +9,14 @@ subtitle: Livros publicados
 subtitle_i18n: books.subtitle
 
 books:
+  - title: "LiDAR Applications for Forest Inventory: An Area-Based Approach"
+    title_en: "LiDAR Applications for Forest Inventory: An Area-Based Approach"
+    # authors: "Grupo FORESTEYES"
+    cover: "lidar_abordagem_area_en.png"
+    description: "E-book em inglês, versão revisada e traduzida do nosso livro em português sobre aplicações de LiDAR no inventário florestal. Apresenta a abordagem baseada em área (Area-Based Approach) para estimativa de atributos florestais a partir de dados LiDAR, com fundamentos teóricos e exemplos práticos."
+    description_en: "English e-book — the revised and translated edition of our Portuguese book on LiDAR applications for forest inventory. It presents the Area-Based Approach for estimating forest attributes from LiDAR data, covering theoretical foundations and hands-on examples."
+    link: "https://forms.gle/QSid4o35PUiYA3qZ8"
+
   - title: "Sensoriamento Remoto com o Google Earth Engine (GEE) um enfoque para a Engenharia Florestal"
     title_en: "Remote Sensing with Google Earth Engine (GEE) — a focus on Forest Engineering"
     # authors: "Grupo FORESTEYES"
