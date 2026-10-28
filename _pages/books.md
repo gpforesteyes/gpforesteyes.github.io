@@ -17,6 +17,22 @@ books:
     description_en: "English e-book — the revised and translated edition of our Portuguese book on LiDAR applications for forest inventory. It presents the Area-Based Approach for estimating forest attributes from LiDAR data, covering theoretical foundations and hands-on examples."
     link: "https://forms.gle/QSid4o35PUiYA3qZ8"
 
+  - title: "Análise Multivariada: Princípios e Procedimentos na Ciência Florestal"
+    title_en: "Multivariate Analysis: Principles and Procedures in Forest Science"
+    # authors: "Flávio Felipe Kirchner, Henrique Soares Koehler, Alexandre Behling"
+    cover: "analise_multivariada.png"
+    description: "Obra do Programa de Pós-graduação em Engenharia Florestal da UFPR (Kirchner, Koehler e Behling, 2026) que apresenta os princípios e procedimentos da estatística multivariada aplicada à ciência florestal: análise de componentes principais, análise de fatores, MANOVA, análise discriminante, de conglomerados e correlação canônica. Inclui exemplos e códigos em MATLAB e Julia disponíveis em repositório."
+    description_en: "From UFPR's Graduate Program in Forest Engineering (Kirchner, Koehler & Behling, 2026), this book presents the principles and procedures of multivariate statistics applied to forest science: principal component analysis, factor analysis, MANOVA, discriminant, cluster and canonical correlation analysis. It includes worked examples and MATLAB and Julia code available in a repository."
+    link: "/assets/pdf/analise_multivariada_ciencia_florestal.pdf"
+
+  - title: "Julia e Experimentos Florestais: Primeiro Curso"
+    title_en: "Julia and Forest Experiments: A First Course"
+    # authors: "Koehler, Péllico Netto, Cabrera Hong, Lisboa Júnior, Behling"
+    cover: "julia_experimentos_florestais.png"
+    description: "Curso introdutório que une a experimentação florestal à linguagem de programação Julia (Koehler, Péllico Netto, Cabrera Hong, Lisboa Júnior e Behling, 2026). Aborda os fundamentos do delineamento e análise de experimentos florestais, os conceitos básicos de estatística e a implementação prática das análises em Julia, com exercícios resolvidos e arquivos disponíveis em repositório."
+    description_en: "An introductory course bringing together forest experimentation and the Julia programming language (Koehler, Péllico Netto, Cabrera Hong, Lisboa Júnior & Behling, 2026). It covers the fundamentals of designing and analyzing forest experiments, basic statistical concepts, and their hands-on implementation in Julia, with solved exercises and files available in a repository."
+    link: "/assets/pdf/julia_experimentos_florestais_primeiro_curso.pdf"
+
   - title: "Sensoriamento Remoto com o Google Earth Engine (GEE) um enfoque para a Engenharia Florestal"
     title_en: "Remote Sensing with Google Earth Engine (GEE) — a focus on Forest Engineering"
     # authors: "Grupo FORESTEYES"
