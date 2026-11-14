@@ -76,11 +76,11 @@ profiles:
     linkedin: 
     orcid: 
  
-  - image: people/mariaemilia.jpeg
+  - image: people/carla.jpeg
     image_circular: false
     more_info: >
-      <p><strong>Maria Emília</strong></p>
-      <p><span data-i18n="profile.role.lab_technician">Técnica de Laboratório</span></p>
+      <p><strong>Carla</strong></p>
+      <p><span data-i18n="profile.role.postdoc">Pós-Doutorado</span></p>
       <p>UFPR - Curitiba</p>
     linkedin: 
     orcid: 
@@ -93,6 +93,15 @@ profiles:
       <p>UFPR - Curitiba</p>
     linkedin: https://www.linkedin.com/in/fabiano-rodrigues-pereira-20122917b/
     orcid: 0000-0001-5357-118X
+
+  - image: people/eduardo.jpeg
+    image_circular: false
+    more_info: >
+      <p><strong>Eduardo</strong></p>
+      <p><span data-i18n="profile.role.phd">Doutorado</span></p>
+      <p>UFPR - Curitiba</p>
+    linkedin: 
+    orcid: 
 
   - image: people/Leticia.jpg
     image_circular: false
@@ -235,5 +244,23 @@ profiles:
       <p>UFPR - Curitiba</p>
     linkedin: https://www.linkedin.com/in/marco-aurelio-figura-2b8b74174/
     orcid: 0000-0002-9740-7717 
+
+  - image: people/osni.jpeg
+    image_circular: false
+    more_info: >
+      <p><strong>Osni</strong></p>
+      <p><span data-i18n="profile.role.undergrad">Graduação</span></p>
+      <p>UFPR - Curitiba</p>
+    linkedin: 
+    orcid: 
+
+  - image: people/heloisa.jpeg
+    image_circular: false
+    more_info: >
+      <p><strong>Heloísa</strong></p>
+      <p><span data-i18n="profile.role.undergrad">Graduação</span></p>
+      <p>UFPR - Curitiba</p>
+    linkedin: 
+    orcid: 
 
 ---

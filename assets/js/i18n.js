@@ -49,6 +49,7 @@ const I18N_DICT = {
 
     "profile.role.coordinator": "Coordenadora",
     "profile.role.collaborator": "Pesquisador Colaborador",
+    "profile.role.postdoc": "Pós-Doutorado",
     "profile.role.phd": "Doutorado",
     "profile.role.msc": "Mestrado",
     "profile.role.undergrad": "Graduação",
@@ -121,6 +122,7 @@ const I18N_DICT = {
 
     "profile.role.coordinator": "Coordinator",
     "profile.role.collaborator": "Collaborating Researcher",
+    "profile.role.postdoc": "Postdoctoral Researcher",
     "profile.role.phd": "PhD Candidate",
     "profile.role.msc": "MSc Candidate",
     "profile.role.undergrad": "Undergraduate Student",
