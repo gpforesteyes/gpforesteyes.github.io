@@ -44,7 +44,7 @@
           <!-- Other pages -->
           {% assign sorted_pages = site.pages | sort: 'nav_order' %}
           {% for p in sorted_pages %}
-            {% if p.nav and p.autogen == null %}
+            {% if p.nav and p.autogen == null and p.nav_cta == null %}
               {%- comment -%} Map permalink to an i18n key so JS can swap titles {%- endcomment -%}
               {%- assign i18n_key = '' -%}
               {%- case p.permalink -%}
@@ -183,6 +183,14 @@
               <span class="lang-code" data-i18n="lang.code">PT-BR</span>
             </button>
           </li>
+          <!-- Highlighted green button at the right: pages with nav_cta: true -->
+          {% for p in sorted_pages %}
+            {% if p.nav and p.nav_cta %}
+              <li class="nav-item nav-cta-item">
+                <a class="nav-link nav-cta" href="{% if p.permalink contains '://' %}{{ p.permalink }}{% else %}{{ p.url | relative_url }}{% endif %}">{{- p.title -}}</a>
+              </li>
+            {% endif %}
+          {% endfor %}
         </ul>
       </div>
     </div>
