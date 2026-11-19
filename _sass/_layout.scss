@@ -51,25 +51,3 @@ body.sticky-bottom-footer {
 *****************************************************************************/
 
 // TODO: redefine projects layout.
-
-// Highlighted navbar button (e.g. ForestEyeSearch)
-.navbar .nav-cta-item {
-  display: flex;
-  align-items: center;
-  margin-left: 0.5rem;
-}
-.navbar .nav-link.nav-cta {
-  background: #2e7d32;
-  color: #fff !important;
-  border-radius: 999px;
-  padding: 0.35rem 0.95rem !important;
-  font-weight: 600;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-  transition: background 0.2s ease;
-}
-.navbar .nav-link.nav-cta:hover,
-.navbar .nav-link.nav-cta:focus {
-  background: #1b5e20;
-  color: #fff !important;
-  text-decoration: none;
-}
