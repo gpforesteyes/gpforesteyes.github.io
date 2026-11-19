@@ -51,13 +51,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/people/";
           },
-        },{id: "nav-foresteyesearch",
-          title: "ForestEyeSearch",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/https:/gpforesteyes.github.io/search/";
-          },
         },{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",
